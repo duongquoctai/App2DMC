@@ -12,15 +12,15 @@ module.exports = {
   ],
   devServer: {
     historyApiFallback: true,
-    port: 3000,
-    open: true,
-    compress: true,
-    hot: true
+    port: 8080,
+    // open: true,
+    compress: true
+    // hot: true
   },
-  resolve: {
-    alias: {
-      'react-dom': '@hot-loader/react-dom'
-    }
-  },
+  // resolve: {
+  //   alias: {
+  //     'react-dom': '@hot-loader/react-dom'
+  //   }
+  // },
   devtool: 'eval-source-map'
 };

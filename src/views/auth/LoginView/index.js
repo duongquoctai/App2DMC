@@ -71,78 +71,7 @@ function LoginView() {
 
   return (
     <Page title="DMC | Login" className={classes.root}>
-      <header className={classes.header}>
-        <RouterLink to="/">
-          <Logo />
-        </RouterLink>
-        {/* <Hidden smDown>
-          <Box sx={{ mt: { md: -2 }, typography: 'body2' }}>
-            Don’t have an account? &nbsp;
-            <Link
-              underline="none"
-              variant="subtitle2"
-              component={RouterLink}
-              to={PATH_PAGE.auth.register}
-            >
-              Get started
-            </Link>
-          </Box>
-        </Hidden> */}
-      </header>
-
-      <Hidden mdDown>
-        <Section />
-      </Hidden>
-
-      <Container>
-        <div className={classes.content}>
-          <Box sx={{ mb: 5 }}>
-            <Typography variant="h4" gutterBottom>
-              Sign in to Data Management Console
-            </Typography>
-            <Typography color="textSecondary">
-              Click to the login button this will redirect you to SSO page
-            </Typography>
-          </Box>
-
-          {/* <SocialLogin firebase={firebase} />
-
-          <Divider className={classes.divider}>
-            <Typography variant="body2" color="textSecondary">
-              OR
-            </Typography>
-          </Divider> */}
-
-          <Box sx={{ mb: 5 }}>
-            <Alert severity="info">
-              User : <strong>admin</strong> / password :
-              <strong>&nbsp;hHTRbquOefLOPnVW</strong>
-            </Alert>
-          </Box>
-
-          <Button
-            fullWidth
-            size="large"
-            href={`${apiConfig.baseUrl}/auth`}
-            variant="contained"
-          >
-            Login
-          </Button>
-
-          <Hidden smUp>
-            <Box sx={{ mt: 3, typography: 'body2', textAlign: 'center' }}>
-              Don’t have an account?&nbsp;
-              <Link
-                variant="subtitle2"
-                to={PATH_PAGE.auth.register}
-                component={RouterLink}
-              >
-                Get started
-              </Link>
-            </Box>
-          </Hidden>
-        </div>
-      </Container>
+      <h1>asd;lkasd;</h1>
     </Page>
   );
 }

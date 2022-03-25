@@ -7,13 +7,11 @@ import { createBrowserHistory } from 'history';
 import { ToastContainer } from 'react-toastify';
 import routes, { renderRoutes } from '~/routes';
 import ScrollToTop from '~/components/ScrollToTop';
-import FirebaseProvider from '~/components/Auth/FirebaseProvider';
-import GoogleAnalytics from '~/components/GoogleAnalytics';
 // import NotistackProvider from '~/components/NotistackProvider';
-import MomentUtils from '@date-io/moment';
-import LocalizationProvider from '@mui/lab/LocalizationProvider';
+// import MomentUtils from '@date-io/moment';
+// import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import LoadingScreen from '~/components/LoadingScreen';
-import ThemeConfig from './theme';
+import ThemeConfig from 'dmc/theme';
 // ----------------------------------------------------------------------
 import 'lazysizes';
 import './_mock_api_';
@@ -41,25 +39,20 @@ function App() {
       <Provider store={store}>
         <PersistGate loading={<LoadingScreen />} persistor={persistor}>
           <ThemeConfig>
-            <LocalizationProvider dateAdapter={MomentUtils}>
-              <FirebaseProvider>
-                <Router history={history}>
-                  <ScrollToTop />
-                  <GoogleAnalytics />
-                  <ToastContainer
-                    position="bottom-right"
-                    autoClose={2000}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                  />
-                  {renderRoutes(routes)}
-                </Router>
-              </FirebaseProvider>
-            </LocalizationProvider>
+            <Router history={history}>
+              <ScrollToTop />
+              <ToastContainer
+                position="bottom-right"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+              />
+              {renderRoutes(routes)}
+            </Router>
           </ThemeConfig>
         </PersistGate>
       </Provider>

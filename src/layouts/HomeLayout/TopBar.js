@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 import useOffSetTop from '~/hooks/useOffSetTop';
 import PopoverMenu from '~/components/PopoverMenu';
 import homeFill from '@iconify-icons/eva/home-fill';
-import { PATH_HOME, PATH_DOCS } from '~/routes/paths';
+import { PATH_HOME } from '~/routes/paths';
 import roundSpeed from '@iconify-icons/ic/round-speed';
 import menu2Fill from '@iconify-icons/eva/menu-2-fill';
 import bookOpenFill from '@iconify-icons/eva/book-open-fill';
@@ -33,8 +33,7 @@ import { MIconButton } from '~/@material-extend';
 const MENU_LINKS = [
   { title: 'Home', icon: homeFill, href: '/' },
   { title: 'Components', icon: roundStreetview, href: PATH_HOME.components },
-  { title: 'Dashboard', icon: roundSpeed, href: PATH_HOME.dashboard },
-  { title: 'Documentation', icon: bookOpenFill, href: PATH_DOCS.root }
+  { title: 'Dashboard', icon: roundSpeed, href: PATH_HOME.dashboard }
 ];
 
 const APP_BAR_MOBILE = 64;

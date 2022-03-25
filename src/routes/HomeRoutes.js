@@ -11,7 +11,7 @@ const HomeRoutes = {
     {
       exact: true,
       path: '/',
-      component: () => <Redirect to="/app/dashboard" />
+      component: () => <Redirect to="/authen/login" />
     },
     {
       exact: true,

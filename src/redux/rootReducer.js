@@ -5,10 +5,6 @@ import { firebaseReducer } from 'react-redux-firebase';
 import { firestoreReducer } from 'redux-firestore';
 import darkModeReducer from './slices/dark-mode';
 import calendarReducer from './slices/calendar';
-import mailReducer from './slices/mail';
-import chatReducer from './slices/chat';
-import blogReducer from './slices/blog';
-import productReducer from './slices/product';
 import userReducer from './slices/user';
 import notificationsReducer from './slices/notifications';
 import authReducer from './slices/auth';
@@ -43,10 +39,6 @@ const rootReducer = combineReducers({
   firestore: firestoreReducer,
   theme: darkModeReducer,
   calendar: calendarReducer,
-  mail: mailReducer,
-  chat: chatReducer,
-  blog: blogReducer,
-  product: persistReducer(productPersistConfig, productReducer),
   user: userReducer,
   notifications: notificationsReducer
 });

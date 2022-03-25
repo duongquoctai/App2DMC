@@ -126,7 +126,7 @@ function ComponentsView() {
           </motion.div>
 
           <motion.div variants={varFadeInUp}>
-            <Link component={RouterLink} to={PATH_APP.components.root}>
+            <Link component={RouterLink} to="/">
               Learn more
             </Link>
           </motion.div>

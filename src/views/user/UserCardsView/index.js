@@ -32,8 +32,8 @@ function UserCardsView() {
           heading="User Cards"
           links={[
             { name: 'Dashboard', href: PATH_APP.root },
-            { name: 'Management', href: PATH_APP.management.root },
-            { name: 'User', href: PATH_APP.management.user.root },
+            { name: 'Management', href: PATH_APP.root },
+            { name: 'User', href: PATH_APP.root },
             { name: 'Cards' }
           ]}
         />
